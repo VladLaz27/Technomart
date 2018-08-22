@@ -1,7 +1,98 @@
 body {
-  background-color: ;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
+  color: #fff;
 }
 
+.wrap {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+li {
+	list-style: none;
+}
+
+header {
+	background-color: #f3f7f8;
+}
+
+.top {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #293449;
+	height: 42px;
+}
+
+.logo-search {
+	display: flex;
+	width: 380px;
+	margin: 0;
+	padding-left: 130px;
+	text-align: center;
+}
+
+.offer {
+	display: flex;
+	align-items: flex-end;
+	width: 450px;
+	margin-left: 90px;
+}
+
+.logo {
+	display: block;
+	max-height: 42px;
+	min-width: 220px;
+	background-color: #ee3643;
+	box-shadow: 0 5px #b52933;
+}
+
+.logo a {
+	display: block;
+	padding-top: 9px;
+	font-family: 'Cuprum', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 24px;
+	line-height: 26px;
+	border: none;
+}
+
+.form {
+	position: relative;
+	display: block;
+	max-height: 42px;
+	min-width: 270px;
+}
+
+.input {
+	height: 42px;
+	width: 270px;
+	border: none;
+	background-color: #293449;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	outline: none;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+    color: #fff;
+    padding-left: 46px;
+}
+
+.button-search {
+	position: absolute;
+	background-color: #293449;
+	border: none;
+	outline: none;
+}
