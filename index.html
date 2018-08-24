@@ -14,77 +14,135 @@
 	<div class="wrap">
 	<!--Шапка-->
 	    <header>
-	    	<article class="top">
-		    	<ul class="logo-search">
-		    		<li class="logo">
-		    			<a href="">Техномарт</a>
-		    		</li>
-		    		<li class="form">
-		    			<form class="search">
-		    				<div class="search-form">
-			    				<input class="input" type="search" name="Поиск" placeholder="Поиск:">
-			    			</div>
-		    			</form>
-		    		</li>
-		    	</ul>
-		    	<ul class="offers">
-		    		<li class="bookmarks">
-		    			<a href="#">Закладки:
-		    				<span class="count">0</span>
-		    			</a>
-		    		</li>
-		    		<li class="bascket">
-		    			<a href="#">Корзина:
-		    				<span class="count">0</span>
-		    			</a>
-		    		</li>
-		    		<li class="get">
-		    			<a href="#">Оформить заказ</a>
-		    		</li>
-		    	</ul>
-	    	</article>
-	    	<article class="hz">
-	    		<div class="left">
-	    			<p class="description">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
-	    		</div>	
-	    		<div center>
-	    			<p class="telephone">+7 (812) 555-05-55</p>
-	    			<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-	    		</div>
-	    		<ul class="right">
-	    			<li>
-	    				<a class="enter" href="">Войти</a>
-	    			</li>
-	    			<li>
-	    				<a class="registration" href="">Регистрация</a>
-	    			</li>
-	    		</ul>
-	    	</article>
-	    	<nav class="main-navigation">
-	    		<ul class="site-navigation">
-	    			<li>
-	    				<a href="index.html">Главная</a>
-	    			</li>
-	    			<li>
-	    				<a href="company.html">Компания</a>
-	    			</li>
-	    			<li>
-	    				<a href="index.html">Каталог</a>
-	    			</li>
-	    			<li>
-	    				<a href="index.html">Новости</a>
-	    			</li>
-	    			<li>
-	    				<a href="index.html">Спецпредложения</a>
-	    			</li>
-	    			<li>
-	    				<a href="index.html">Доставка</a>
-	    			</li>
-	    			<li>
-	    				<a href="index.html">Контакты</a>
-	    			</li>
-	    		</ul>
-	    	</nav>
+	    	<div class="header-wrap">
+		    	<article class="top">
+			    	<ul class="logo-search">
+			    		<li class="logo">
+			    			<a href="">Техномарт</a>
+			    		</li>
+			    		<li class="form">
+			    			<form class="search">
+			    				<div class="search-form">
+				    				<input class="input" type="search" name="Поиск" placeholder="Поиск:">
+				    			</div>
+			    			</form>
+			    		</li>
+			    	</ul>
+			    	<ul class="orders">
+			    		<li class="bookmarks">
+			    			<a href="#">Закладки:
+			    				<span class="count">0</span>
+			    			</a>
+			    		</li>
+			    		<li class="bascket">
+			    			<a href="#">Корзина:
+			    				<span class="count">0</span>
+			    			</a>
+			    		</li>
+			    		<li class="get">
+			    			<a href="#">Оформить заказ</a>
+			    		</li>
+			    	</ul>
+		    	</article>
+		    	<article class="hz">
+		    		<div class="left">
+		    			<p class="description">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
+		    		</div>	
+		    		<div class=center>
+		    			<p class="telephone">+7 (812) 555-05-55</p>
+		    			<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
+		    		</div>
+		    		<div class="right">
+			    		<ul class="block-right">
+			    			<li>
+			    				<a class="button enter" href="">Войти</a>
+			    			</li>
+			    			<li>
+			    				<a class="button registration" href="">Регистрация</a>
+			    			</li>
+			    		</ul>
+			    	</div>	
+		    	</article>
+		    	<nav class="main-navigation">
+		    		<ul class="site-navigation">
+		    			<li class="navigation-item main">
+		    				<a href="index.html">Главная</a>
+		    			</li>
+		    			<li class="navigation-item company">
+		    				<a href="company.html">Компания</a>
+		    			</li>
+		    			<li class="navigation-item catalog">
+		    				<a href="catalog.html">Каталог</a>
+		    			</li>
+		    			<li class="navigation-item news">
+		    				<a href="news.html">Новости</a>
+		    			</li>
+		    			<li class="navigation-item offers">
+		    				<a href="offers.html">Спецпредложения</a>
+		    			</li>
+		    			<li class="navigation-item delivery">
+		    				<a href="delivery.html">Доставка</a>
+		    			</li>
+		    			<li class="navigation-item contacts">
+		    				<a href="contacts.html">Контакты</a>
+		    			</li>
+		    		</ul>
+		    	</nav>
+		    </div>	
 	    </header>	
+	    <!--Контент-->
+	    <main class="main-page">
+	    	<section class="promo-block">
+	    		<div class="promo-top">
+	    			<div class="promo-item materials">
+	    				<p class="promo-name">Материалы</p>
+	    				<a class="promo-button" href="#">На любой вкус</a>
+	    			</div>
+	    			<div class="promo-item tools">
+	    				<p class="promo-name">Инструмент</p>
+	    				<a class="promo-button" href="#">На все случаи</a>
+	    			</div>
+	    			<div class="promo-item machinery">
+	    				<p class="promo-name">Техника</p>
+	    				<a class="promo-button" href="#">Для стройки</a>
+	    			</div>
+	    		</div>
+	    		<div class="promo-bottom">
+	    			<div class="slides-container">
+	    				<div class="slides-wrap" style="transition-duration: 0ms; transform: translate3d(-1150px, 0px, 0px);">
+		    				<div class="promo-slide slide-1 visually-hidden">
+		    					<img src="img/slide-1.jpg" width="620" height="266" alt="slide-1">
+		    				</div>
+		    				<div class="promo-slide slide-2">
+		    					<img src="img/slide-2.jpg" width="620" height="266" alt="slide-2">
+		    				</div>
+		    			</div>	
+		    			<div class="promo-pagination pagination-clickable pagination-bullets">
+		    				<span class="pagination-bullet pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+		    				<span class="pagination-bullet pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+		    			</div>
+		    			<div class="slide-button-next"></div>
+		    			<div class="slide-button-prew"></div>
+		    			<span class="promo-notification" aria-live="assertive" aria-atomic="true"></span>
+	    			</div>
+	    			<div class="promo-services">
+	    				<div class="promo-item sales">
+	    					<p class="promo-name">Скидки
+	    						<span>50%</span>
+	    					</p>
+	    					<a class="promo-button" href="#">На 350 товаров</a>
+	    				</div>
+	    				<div class="promo-item delivery-promo">
+	    					<p class="promo-name">Доставка</p>
+	    					<a class="promo-button" href="#">Бесплатно</a>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</section>
+	    	<section></section>
+	    	<section></section>
+	    	<article></article>
+	    	<article></article>
+	    </main>
 	</div>    
 </body>

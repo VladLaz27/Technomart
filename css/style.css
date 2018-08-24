@@ -25,6 +25,10 @@ header {
 	background-color: #f3f7f8;
 }
 
+.header-wrap {
+	min-height: 320px;
+}
+
 .top {
 	position: relative;
 	display: flex;
@@ -122,7 +126,7 @@ input[type="search"]:hover {
 	opacity: 1;
 }
 
-.offers {
+.orders {
 	display: flex;
 	flex-wrap: wrap;
     align-items: flex-end;
@@ -132,7 +136,7 @@ input[type="search"]:hover {
 	font-family: 'Cuprum', sans-serif;
 }
 
-.offers a {
+.orders a {
 	position: relative;
 	font-size: 17px;
 	line-height: 18px;
@@ -240,15 +244,16 @@ color: #999ca1;
 }
 
 .center {
-	width: 400px;
+	position: relative;
+	width: 370px;
 }
 
 .telephone {
 	display: block;
     width: 242px;
-    margin-top: 45px;
+    margin-top: 47px;
     margin-bottom: 0;
-    margin-left: 20px;
+    margin-left: 48px;
     padding-left: 22px;
     padding-top: 10px;
     padding-bottom: 13px;
@@ -260,6 +265,369 @@ color: #999ca1;
     color: #ee3643;
 }
 
-.right {
-	width: 400px;
+.telephone:before {
+	content: "";
+	position: absolute;
+	top: 59px;
+    left: 64px;
+	width: 18px;
+	height: 19px;
+	background-image: url("../img/icon-phone.png");
+	background-repeat: no-repeat;
 }
+
+.adress {
+	display: block;
+	width: 265px;
+	margin-left: 52px;
+	padding-top: 1px;
+	font-family: 'Cuprum', sans-serif;
+	text-align: center;
+	font-size: 14px;
+	line-height: 0px;
+	color: #32425c;
+}
+
+.right {
+	width: 430px;
+	margin-top: 46px;
+	padding: 0;
+}
+
+.block-right {
+	position: relative;
+	display: flex;
+	margin: 0; 
+	padding: 0;
+}
+
+.button {
+	display: block;
+	padding-top: 14px;
+	padding-bottom: 15px;
+	background-color: #fff;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 22px;
+    line-height: 16px;
+	color: #000;
+}
+
+.block-right li:last-child {
+	padding-left: 10px;
+}
+
+.block-right li:first-child {
+	margin-left: 18px;
+}
+
+.enter {
+	padding-left: 47px;
+    padding-right: 24px;
+}
+
+.enter:before {
+	content: "";
+	position: absolute;
+	top: 14px;
+    left: 31px;
+	width: 20px;
+	height: 17px;
+	background-image: url("../img/icon-login.png");
+	background-repeat: no-repeat;
+	opacity: 0.1;
+}
+
+.registration {
+	padding-right: 23px;
+	padding-left: 23px;
+}
+
+.enter:hover:before {
+	opacity: 1;
+}
+
+.button:hover {
+	color: #ee3643;
+}
+
+.button:focus {
+	color: #c5c5c5;
+}
+
+.main-navigation {
+	width: 942px;
+	margin-left: 129px;
+}
+
+.site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 25px;
+	margin-bottom: 0;
+	padding: 0;
+	background-color: #32425c;
+	box-shadow: 0 5px #293449;
+}
+
+.navigation-item {
+	padding-top: 21px;
+	padding-bottom: 18px;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 18px;
+    line-height: 18px;
+}
+
+.main {
+	padding-left: 50px;
+	padding-right: 25px;
+}
+
+.company {
+	padding-left: 38px;
+	padding-right: 25px;
+}
+
+.catalog {
+	padding-right: 25px;
+	padding-left: 28px;
+}
+
+.news {
+	padding-right: 25px;
+	padding-left: 32px;
+}
+
+.offers {
+	padding-right: 25px;
+	padding-left: 32px;
+}
+
+.delivery {
+	padding-right: 25px;
+	padding-left: 30px;
+}
+
+.contacts {
+	padding-right: 53px;
+	padding-left: 34px;
+}
+
+.navigation-item:hover {
+	background-color: #293449;
+}
+
+.navigation-item a:focus {
+	color: #b2b2b2;
+}
+
+/* Контент */
+
+.main-page {
+	margin: 0;
+}
+
+.promo-block {
+	margin: 0 130px 0 130px;
+}
+
+.promo-top {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin-top: 60px;
+}
+
+.promo-item {
+	position: relative;
+	width: 300px;
+	min-height: 123px;
+}
+
+.materials {
+	background-color: #ffbf47;
+}
+
+.materials:before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 59px;
+	top: 0px;
+	left: 240px;
+	background-image: url("../img/new-flag.png");
+	background-repeat: no-repeat;
+}
+
+.materials:after {
+	content: "";
+	position: absolute;
+	width: 44px;
+	height: 65px;
+	top: 30px;
+	left: 212px;
+	background-image: url("../img/icon-1.png");
+	background-repeat: no-repeat;
+}
+
+.tools {
+	background-color: #3bbce3;
+}
+
+.tools:after {
+	content: "";
+	position: absolute;
+	width: 75px;
+	height: 61px;
+	top: 32px;
+	left: 196px;
+	background-image: url("../img/icon-2.png");
+	background-repeat: no-repeat;
+}
+
+.machinery {
+	background-color: #dc91d8;
+}
+
+.machinery:after {
+	content: "";
+	position: absolute;
+	width: 78px;
+	height: 62px;
+	top: 30px;
+	left: 190px;
+	background-image: url("../img/icon-3.png");
+	background-repeat: no-repeat;
+}
+
+.promo-name {
+	font-family: 'Cuprum', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 23px;
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.promo-button {
+	background-color: rgba(106, 113, 128, 0.3);
+    font-family: 'Cuprum', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fdfbfb;
+    border-radius: 3px;
+    margin-left: 25px;
+}
+
+.promo-button:hover {
+	background-color: rgba(106, 113, 128, 0.5);
+}
+
+.promo-button:focus {
+	background-color: rgba(106, 113, 128, 0.8);
+}
+
+.materials a {
+	padding: 12px 24px 10px;
+}
+
+.tools a {
+	padding: 12px 24px 10px 26px;
+}
+
+.machinery a {
+	padding: 12px 30px 10px 28px;
+}
+
+.promo-bottom {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin-top: 20px;
+}
+
+.sales {
+	background-color: #8ed78f;
+}
+
+.delivery-promo {
+	background-color: #ffc047;
+	margin-top: 20px;
+}
+
+.sales a {
+	padding: 12px 24px 10px 20px;
+}
+
+.delivery-promo a {
+	padding: 12px 34px 10px 36px;
+}
+
+.sales:after {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 73px;
+	top: 25px;
+	left: 194px;
+	background-image: url("../img/icon-4.png");
+	background-repeat: no-repeat;
+}
+
+.delivery-promo:after {
+	content: "";
+	position: absolute;
+	width: 78px;
+	height: 64px;
+	top: 30px;
+	left: 190px;
+	background-image: url("../img/icon-5.png");
+	background-repeat: no-repeat;
+}
+
+
+/*
+.slides-container {
+	margin: 0;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.slides-wrap {
+	position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform,-webkit-transform;
+    box-sizing: content-box;
+}
+
+.promo-slide, .slides-wrap {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+/*
+
+
+
+/* Если нужно временно скрыть 
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*/
