@@ -288,7 +288,7 @@ color: #999ca1;
 	font-size: 14px;
 	line-height: 0px;
 	color: #32425c;
-	padding-left: 28px;
+	padding-left: 26px;
 }
 
 .right {
@@ -324,7 +324,7 @@ color: #999ca1;
 
 .enter {
 	padding-left: 47px;
-    padding-right: 26px;
+    padding-right: 24px;
 }
 
 .enter:before {
@@ -584,6 +584,10 @@ color: #999ca1;
 	background-repeat: no-repeat;
 }
 
+.slides-wrap {
+	position: relative;
+}
+
 .slide-1 {
 	background: url("../img/slide-1.jpg");
   	background-color: #a99883;
@@ -616,7 +620,7 @@ color: #999ca1;
 	font-size: 18px;
 	padding-top: 11px;
     padding-left: 24px;
-    padding-bottom: 125px;
+    padding-bottom: 132px;
 }
 
 .promo-slide a {
@@ -627,39 +631,28 @@ color: #999ca1;
     color: #fff;
     border-radius: 3px;
     padding: 10px 49px;
-    margin-left: 22px;
+    margin-left: 25px;
 }
 
-/*
-закинуть в slide-wrap -
-style="transition-duration: 0ms; transform: translate3d(-1150px, 0px, 0px);
-
-.slides-container {
-	margin: 0;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
+.slide-button-next {
+	position: absolute;
+	z-index: 10;
+	width: 22px;
+	height: 40px;
+	top: 636px;
+    left: 1060px;
+    cursor: pointer;
 }
 
-.slides-wrap {
-	position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    transition-property: transform,-webkit-transform;
-    box-sizing: content-box;
+.slide-button-prev {
+	position: absolute;
+	z-index: 10;
+	width: 22px;
+	height: 40px;
+	top: 636px;
+    left: 507px;
+    cursor: pointer;
 }
-
-.promo-slide, .slides-wrap {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-/*
-
-
 
 /* Если нужно временно скрыть 
 
@@ -678,9 +671,3 @@ style="transition-duration: 0ms; transform: translate3d(-1150px, 0px, 0px);
 
 */
 
-.promo-slide {
-	position: relative;
-	flex-shrink: 0;
-	transition-property: transform,-webkit-transform;
-	font-size: 30px;
-}
