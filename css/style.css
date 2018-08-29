@@ -584,13 +584,8 @@ color: #999ca1;
 	background-repeat: no-repeat;
 }
 
-.slides-wrap {
-	position: relative;
-}
-
 .slide-1 {
 	background: url("../img/slide-1.jpg");
-  	background-color: #a99883;
   	background-repeat: no-repeat;
   	height: 266px;
  	width: 620px;
@@ -598,7 +593,6 @@ color: #999ca1;
 
 .slide-2 {
 	background: url("../img/slide-2.jpg");
-  	background-color: #4c4340;
   	background-repeat: no-repeat;
   	height: 266px;
  	width: 620px;
@@ -636,23 +630,226 @@ color: #999ca1;
 
 .slide-button-next {
 	position: absolute;
-	z-index: 10;
-	width: 22px;
-	height: 40px;
-	top: 636px;
-    left: 1060px;
+    z-index: 10;
+    width: 0px;
+    height: 0px;
+    top: 135px;
+    left: 580px;
     cursor: pointer;
 }
 
 .slide-button-prev {
 	position: absolute;
 	z-index: 10;
-	width: 22px;
-	height: 40px;
-	top: 636px;
-    left: 507px;
+    width: 0px;
+    height: 0px;
+	top: 135px;
+    left: 26px;
     cursor: pointer;
 }
+
+.popular-title {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	background-color: #f2eadf;
+	margin-top: 52px;
+	padding: 0;
+}
+
+.popular-title h2 {
+	font-family: 'Cuprum', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #32425c;
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 28px;
+    padding-bottom: 28px;
+}
+
+.popular-title li:last-child {
+    margin-bottom: 33px;
+    margin-left: 374px;
+}
+
+.popular-title a {
+	font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    border-radius: 3px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-right: 56px;
+    padding-left: 53px;
+}
+
+
+.popular-items {
+	display: flex;
+	margin-top: 20px;
+}
+
+.popular-item {
+	position: relative;
+	display: inline-block;
+	min-width: 218px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	border: 1px solid #ccc;
+	line-height: 18px;
+    font-size: 16px;
+    font-weight:bold;
+    color: #000;
+    text-align:center;
+}
+
+.popular-item .flag{
+    position: absolute;
+    background: url("../img/new-flag.png") no-repeat 0 0;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.popular-item .actions {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10;
+}
+
+.popular-item .actions .buy,
+.popular-item .actions .bookmark {
+    display: block;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315; 
+    background-color: #63a63e;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Cuprum", sans-serif;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;    
+    border-radius: 3px;
+}
+
+.popular-item .actions .bookmark{
+    color: #32425c;
+    background: white;
+    border-bottom-color: #63a63e;
+}
+
+.popular-item .actions {
+    display: none;
+}
+.popular-item:hover .actions {
+    display: block;
+}
+
+.first .title {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.perf-1 {
+	margin-top: 8px;
+	width: 185px;
+	height: 165px;
+}
+
+.second .title {
+	margin-top: 36px;
+	margin-bottom: 10px;
+}
+ 
+.perf-2 {
+	margin-top: 32px;
+    margin-right: 10px;
+    width: 125px;
+    height: 110px;
+}
+
+.third .title {
+	margin-top: 28px;
+	margin-bottom: 10px;
+}
+
+.perf-3 {
+	margin-top: 25px;
+    margin-right: 20px;
+    width: 145px;
+    height: 125px;
+}
+
+.four .title{
+	margin-top: 36px;
+	margin-bottom: 38px;
+}
+
+.perf-4 {
+	margin-top: 32px;
+    margin-right: 25px;
+    width: 125px;
+    height: 110px;
+}
+
+.popular-item .title {
+    min-height: 40px;
+    padding: 0 25px;
+}
+.popular-item .discount {
+    min-height: 20px;
+    margin-left: 5px;
+    margin-bottom: 7px;
+    color: #999;
+    text-decoration: line-through;
+}
+.popular-item .price {
+	position:relative;
+    width:80px;
+    margin-bottom:20px;
+    margin-left: 43px;
+    padding:10px 30px;
+    color:white;
+    background:#ee3643;
+    border-radius:3px;
+}
+.popular-item .price:after {
+	content: "";
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 19px solid white;
+    border-left-color: #ee3643;
+}
+
+
+
+
+
+
+
+
 
 /* Если нужно временно скрыть 
 
@@ -670,4 +867,3 @@ color: #999ca1;
 }
 
 */
-

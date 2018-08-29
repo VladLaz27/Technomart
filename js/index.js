@@ -1,6 +1,6 @@
-    var slides = new Swiper(".slides-container", {
+    var slides = new Swiper(".swiper-container", {
       navigation: {
-        nextEl: ".slide-button-next",
-        prevEl: ".slide-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
