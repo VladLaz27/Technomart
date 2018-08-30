@@ -423,7 +423,7 @@ color: #999ca1;
 
 /* Контент */
 
-.main-page {
+.block-one {
 	margin-left: 480px;
     width: 940px;
 }
@@ -905,11 +905,186 @@ color: #999ca1;
 	height: 100%;
 }
 
+.background {
+	background-color: #f4f8f9;
+}
+
+.services {
+	width: 940px;
+	height: 522px;
+	margin-left: 480px;
+	margin-top: 65px;
+}
+
+.service-title {
+	padding-top: 65px;
+}
+
+.service-title h2 {
+	font-family: 'Cuprum', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+}
+
+.service-title p {
+	color: #000;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.service-title p:nth-child(2) {
+	padding-top: 17px;
+}
+
+.service-list {
+	float: left;
+	display: block;
+	position: relative;
+	width: 240px;
+	padding: 0;
+	margin-top: 58px;
+}
+
+.service-list:after {
+	position: absolute;
+	content: "";
+	width: 8px;
+	height: 250px;
+	top: -32px;
+    left: 233px;
+	background: url("../img/line.png") no-repeat;
+}
+
+.tab {
+	position: relative;
+	background-color: #32425c;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.tabs__caption .tab:not(.active) {
+    cursor: pointer;
+}
+
+.service-list .active {
+	background-color: #fff;
+	color: #000;
+}
+
+.tab span {
+	display: inline-block;
+}
+
+.tab-delivery,
+.tab-guarantee {
+	border-bottom: 1px solid #4d637b;
+}
+
+.tab-delivery span {
+    padding-top: 10px;
+    padding-left: 23px;
+    padding-bottom: 17px;
+}
+
+.tab-guarantee span {
+	padding-top: 12px;
+    padding-left: 24px;
+    padding-bottom: 18px;
+}
+
+.tab-credit span {
+	padding-top: 12px;
+    padding-left: 23px;
+    padding-bottom: 17px;
+}
+
+.tabs__content {
+	display: none;
+}
+
+.tabs__content.active {
+	display: block;
+}
+
+.tabs__content h3 {
+	font-family: 'Cuprum', sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #32425c;
+    margin: 0;
+}
+
+.tabs__content p {
+	font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #32425c;
+    padding-top: 12px;
+}
+
+.tab-title {
+	padding-left: 320px;
+    padding-top: 57px;
+}
+
+.tab-title a {
+	font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ee3643;
+    border-radius: 3px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.credit-content p {
+	padding-bottom: 20px;
+}
 
 
+/*
+.delivery-title:after {
+	content: "";
+	position: absolute;
+	width: 468px;
+	height: 261px;
+	top: 81px;
+    left: 471px;
+	background: url("../img/delivery.png") no-repeat;
+}
 
+.guarantee-content:after {
+	content: "";
+	position: absolute;
+	width: 390px;
+    height: 285px;
+    top: 81px;
+    left: 520px;
+	background: url("../img/guarantee.png") no-repeat;
+}
 
-
+.credit-content:after {
+	content: "";
+	position: absolute;
+	width: 462px;
+    height: 285px;
+    top: 81px;
+    left: 460px;
+	background: url("../img/credit.png") no-repeat;
+}
 
 /* Если нужно временно скрыть 
 
