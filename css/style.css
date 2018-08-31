@@ -947,6 +947,7 @@ color: #999ca1;
 	width: 240px;
 	padding: 0;
 	margin-top: 58px;
+	z-index: 20;
 }
 
 .service-list:after {
@@ -1006,6 +1007,7 @@ color: #999ca1;
 
 .tabs__content {
 	display: none;
+	position: relative;
 }
 
 .tabs__content.active {
@@ -1054,9 +1056,7 @@ color: #999ca1;
 	padding-bottom: 20px;
 }
 
-
-/*
-.delivery-title:after {
+.delivery-content:after {
 	content: "";
 	position: absolute;
 	width: 468px;
