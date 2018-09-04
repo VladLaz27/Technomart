@@ -898,6 +898,10 @@ color: #999ca1;
 	margin-bottom: 20px;
 }
 
+.producers-item:hover {
+	box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+}
+
 .produce-image {
 	display: flex;
 	justify-content: center;
@@ -1085,6 +1089,263 @@ color: #999ca1;
     left: 460px;
 	background: url("../img/credit.png") no-repeat;
 }
+
+.info {
+	position: relative;
+	height: 536px;
+}
+
+.info-block {
+	display: flex;
+}
+
+.info-left {
+	margin-left: 480px;
+}
+
+.info-left h2,
+.info-right h2 {
+	font-family: 'Cuprum', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+    padding-top: 80px;
+}
+
+.info-left p,
+.info-right p {
+	color: #000;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    padding-top: 18px;
+}
+
+.delivry-companys {
+	padding-left: 38px;
+	position: relative;
+}
+
+.delivry-companys:before {
+	content: "";
+	position: absolute;
+	background-color: #ee3643;
+	width: 25px;
+	height: 2px;
+	top: 18px;
+    left: 1px;
+}
+
+.delivry-companys:after {
+	content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 25px;
+    height: 38px;
+    top: 58px;
+    left: 1px;
+    border-top: 2px solid #ee3643;
+    border-bottom: 2px solid #ee3643;
+}
+
+.delivry-companys li {
+	position: relative;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    color: #000;
+}
+
+.info-left a,
+.info-right button {
+	display: inline-block;
+	background-color: #ee3643;
+    font-family: 'Cuprum', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 9.5px 40px;
+    margin-top: 10px;
+}
+
+.info-right {
+	margin-left: 120px;
+}
+
+.info-image img {
+	padding-top: 20px;
+}
+
+.info-right>button {
+	border: none;
+	padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 65px;
+    padding-right: 58px;
+    margin-right: 1px;
+    margin-top: 35px;
+}
+
+.big-map {
+	display: none;
+	position: absolute;
+	top: 32px;
+    left: 480px;
+}
+
+.big-map img {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	width: 940px;
+	height: 446px;
+}
+
+
+/*Подвал*/
+.background-top {
+	background-color: #32425c;
+	height: 193px;
+}
+
+.footer-head {
+	margin-left: 480px;
+	display: flex;
+}
+
+.footer-logo {
+	max-width: 220px;
+	background-color: #ee3643;
+	box-shadow: 0 5px #b52933;
+}
+
+.footer-logo a {
+	display: block;
+    font-family: 'Cuprum', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 26px;
+    padding-top: 22px;
+    padding-left: 42px;
+    padding-bottom: 15px;
+}
+
+.logo-address p {
+	display: block;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 5px;
+    padding-top: 15px;
+}
+
+.head-lists {
+	margin-left: 26px;
+    margin-top: 27px;
+}
+
+.head-lists li {
+	font-family: 'Cuprum', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+} 
+
+.first-list {
+	display: flex;
+}
+
+.first-list li:not(:first-child) {
+	padding-left: 59px;
+}
+
+.second-list {
+	display: flex;
+	margin-top: 40px;
+    margin-left: 24px;
+}
+
+.second-list li:not(:first-child) {
+	padding-left: 59px;
+}
+
+.background-bottom {
+	background-color: #293449;
+	height: 107px;
+}
+
+.footer-foot {
+	display: flex;
+	width: 940px;
+	margin-left: 480px;
+	font-family: 'Cuprum', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.page-foot {
+	display: flex;
+	width: 33.333%;
+}
+
+.page-foot p:first-child {
+	padding-top: 20px;
+}
+
+.communication div:first-child {
+	padding-left: 15px;
+}
+
+.communication div:last-child {
+	padding-left: 52px;
+}
+
+.communication p {
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+.yelow {
+	color: #ffd180;
+}
+
+.social {
+	display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding-left: 73px;
+    padding-top: 35px;
+}
+
+.social li {
+	margin-left: 4px;
+}
+
+.vk,
+.fb,
+.insta {
+	display: block;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+}
+
+.vk {
+	background: #212a3a url(../img/vk-icon.png) no-repeat 50% 50%;
+}
+
+.fb {
+	background: #212a3a url(../img/fb-icon.png) no-repeat 50% 50%;
+}
+.insta {
+	background: #212a3a url(../img/insta-icon.png) no-repeat 50% 50%;
+}
+
+
 
 /* Если нужно временно скрыть 
 
