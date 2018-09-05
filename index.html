@@ -209,44 +209,44 @@
 		    		</ul>
 		    		<ul class="popular-producers-items">
 		    			<li class="producers-item bosch">
-		    				<div class="produce-image">
+		    				<a href="#" class="produce-image">
 		    					<img src="img/bosch.jpg" width="126" height="37" alt="№1">
-		    				</div>
+		    				</a>
 		    			</li>
 		    			<li class="producers-item makita">
-		    				<div class="produce-image">
+		    				<a href="#" class="produce-image">
 		    					<img src="img/makita.jpg" width="123" height="40" alt="№2">
-		    				</div>
+		    				</a>
 		    			</li>
 		    			<li class="producers-item dewalt">
-		    				<div class="produce-image">
+		    				<a href="#" class="produce-image">
 		    					<img src="img/DeWALT.jpg" width="146" height="44" alt="№3">
-		    				</div>
+		    				</a>
 		    			</li>
 		    			<li class="producers-item inter">
-		    				<div class="produce-image">
+		    				<a href="#" class="produce-image">
 		    					<img src="img/inter.jpg" width="200" height="88" alt="№4">
-		    				</div>
+		    				</a>
 		    			</li>
 		    			<li class="producers-item hitachi">
-		    				<div class="produce-image">
+		    				<a href="#" class="produce-image">
 		    					<img src="img/Hitachi.jpg" width="169" height="31" alt="№5">
-		    				</div>
+		    				</a>
 		    			</li>
 		    			<li class="producers-item lg">
-		    				<div class="produce-image">
+		    				<a href="#" class="produce-image">
 		    					<img src="img/LG.jpg" width="121" height="73" alt="№6">
-		    				</div>
+		    				</a>
 		    			</li>
 		    			<li class="producers-item aeg">
-		    				<div class="produce-image">
+		    				<a href="#" class="produce-image">
 		    					<img src="img/AEG.jpg" width="151" height="96" alt="№7">
-		    				</div>
+		    				</a>
 		    			</li>
 		    			<li class="producers-item metabo">
-		    				<div class="produce-image">
+		    				<a href="#" class="produce-image">
 		    					<img src="img/Metabo.jpg" width="204" height="69" alt="№8">
-		    				</div>
+		    				</a>
 		    			</li>
 		    		</ul>
 		    	</div>
@@ -299,9 +299,9 @@
 					<div class="info-block">
 						<div class="info-left">
 							<h2>Компания «Техномарт»</h2>
-							<p>Настоящий мужской шоппинг начинается здесь ! Огромный выбор товаров для ремонта и<br>
+							<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
 							строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-							<p>Мы можем доставить ваш товар в самые отдаленные точки ПАРРРАШИ.<br>
+							<p>Мы можем доставить ваш товар в самые отдаленные точки России.<br>
 							Техномарт работает со многими транспортными компаниями:</p>
 							<ul class="delivry-companys">
 								<li>Деловые линии</li>
@@ -318,9 +318,28 @@
 							</div>
 							<button class="button-write" type="button">Заблудились? Напишите нам!</button>
 						</div>
-						<form>
-							
-						</form>
+						<div class="modal-write modal-show">
+							<form class="write-us">
+								<div class="write-top">
+									<div class="m-input">
+										<label for="user-name">Ваше имя:</label>
+										<input type="text" id="user-name" name="name" placeholder="Имя Фамилия">
+									</div>
+									<div class="m-input">
+										<label for="user-mail">Ваш e-mail:</label>
+										<input type="text" id="user-mail" name="mail" placeholder="email@example.com">
+									</div>
+								</div>	
+								<div class="modal-center">
+									<label for="latter">Текст письма:</label>
+									<input type="text" id="latter" name="latter" placeholder="В свободной форме">
+								</div>
+								<div class="modal-footer">
+									<button class="send" type="submit">Отправить</button>
+								</div>
+							</form>
+							<button class="modal-close" type="button"></button>
+						</div>	
 						<div class="big-map">
 							<img src="img/map.jpg" width="940" height="446" alt="map">
 						</div>
@@ -407,6 +426,5 @@
 	</div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/swiper.min.js" type="text/javascript"></script>
-		<script src="js/tab.js" type="text/javascript"></script>
 		<script src="js/index.js" type="text/javascript"></script>
 </body>
