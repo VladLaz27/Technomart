@@ -1179,6 +1179,10 @@ color: #999ca1;
     margin-top: 10px;
 }
 
+.info-image {
+	display: block;
+}
+
 .info-image img {
 	padding-top: 20px;
 }
@@ -1188,7 +1192,7 @@ color: #999ca1;
 	margin-left: 125px;
 }
 
-.info-right>button {
+.info-right>.button-write {
 	border: none;
 	padding-top: 12px;
     padding-bottom: 10px;
@@ -1236,7 +1240,7 @@ color: #999ca1;
 .m-input input[type="text"] {
 	box-sizing: border-box;
     flex-wrap: wrap;
-    color: #dee3e4;
+    color: #000;
     font-size: 12px;
     line-height: 16px;
     padding-top: 8px;
@@ -1253,12 +1257,8 @@ color: #999ca1;
     margin-bottom: 37px;
 }
 
-.modal-center label {
-
-}
-
 .modal-center input[type="text"] {
-	color: #dee3e4;
+	color: #000;
     font-size: 12px;
     line-height: 16px;
     border: 2px solid #dee3e4;
@@ -1292,11 +1292,6 @@ color: #999ca1;
     padding-bottom: 9px;
     padding-right: 56px;
     padding-left: 53px;
-}
-
-.modal-show {
-	display: block;
-	animation: bounce 0.6s;
 }
 
 .modal-close {
@@ -1340,6 +1335,16 @@ color: #999ca1;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	width: 940px;
 	height: 446px;
+}
+
+.map-close {
+	top: 10px;
+    right: 10px;
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
 }
 
 
@@ -1501,6 +1506,24 @@ color: #999ca1;
 
 .communication .yelow:focus {
 	color: red;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Если нужно временно скрыть 
