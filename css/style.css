@@ -1826,33 +1826,100 @@ color: #999ca1;
 	padding-left: 25px;
 }
 
+.form-center {
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 8px;
+}
 
+.form-checkbox,
+.form-radio {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
 
+.form-legend {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
 
+.filter-checkboxes, 
+.filter-radios {
+	padding-left: 0;
+    margin: 0;
+}
 
+.filter-checkboxes li {
+	margin: 18px 0;
+}
 
+.filter-checkbox + label {
+	position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
 
+.filter-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 23px;
+    height: 23px;
+    transform: translateY(-50%);
+    background-image: url(../img/checkbox-off.png);
+    background-repeat: no-repeat;
+}
 
+.filter-checkbox:checked + label::before {
+    width: 27px;
+    background-image: url(../img/checkbox-on.png);
+}
 
+.form-bottom {
+    border-bottom: 1px solid #cacaca;
+}
 
+.filter-radios li {
+	margin: 18px 0;
+}
 
+.filter-radio + label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
 
+.filter-radio + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    transform: translateY(-50%);
+    background-image: url(../img/radio-off.png);
+    background-repeat: no-repeat;
+}
 
+.filter-radio:checked + label::before {
+    background-image: url(../img/radio-on.png);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.submit {
+	margin-top: 60px;
+    font-family: PT Sans, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    width: 140px;
+    height: 38px;
+    background: none;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+}
 
 .sorting {
 	display: flex;
@@ -2045,7 +2112,7 @@ color: #999ca1;
 .catalog-item .price {
     position: relative;
     width: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     margin-left: 43px;
     padding: 10px 30px;
     color: white;
@@ -2078,7 +2145,7 @@ color: #999ca1;
 .pages {
 	display: flex;
 	padding: 0;
-	margin-top: 60px;
+	margin-top: 56px;
 }
 
 .pages li {
@@ -2100,7 +2167,7 @@ li .focus {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding-top: 10px;
-	padding-bottom: 13px;
+	padding-bottom: 12px;
 }
 
 .page-button-number {
@@ -2110,7 +2177,7 @@ li .focus {
 
 .page-button-next {
 	padding-left: 30px;
-	padding-right: 35px;
+	padding-right: 40px;
 }
 
 .page-button-number:hover,
@@ -2129,6 +2196,7 @@ li .focus {
 
 .page-bottom {
 	background-color: #e8eff2;
+	margin-top: 56px;
 }
 
 .page-bottom-text {
@@ -2137,7 +2205,23 @@ li .focus {
 	color: #000;
 }
 
-/*
+.page-bottom-text span {
+	display: inline-block;
+	font-family: 'Cuprum', sans-serif;
+}
+
+.page-bottom-text span:first-child {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-top: 65px;
+}
+
+.page-bottom-text span:last-child {
+    padding-top: 28px;
+    padding-bottom: 75px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -2151,4 +2235,3 @@ li .focus {
   overflow: hidden;
 }
 
-*/
